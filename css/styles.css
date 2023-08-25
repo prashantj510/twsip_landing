@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+    /* z-index: 10; */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+
+  /* Custom Scrollbar END */
+#title {
+    /* margin-top: 0; */
+    background-color: #b61d95;
+    height: 99vh;
+}
+
+.nav-align {
+    margin-left: 70%;
+}
+
+.logo-font {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-weight: bold;
+    font-size: 2.7rem;
+    margin-left: 50%;
+}
+
+.sfont,
+.cta-head {
+    font-family: 'Montserrat';
+    color: #fff;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.fe-title,
+.plan-head,
+.form-label {
+    font-family: 'Montserrat';
+    color: #a39f9f;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.fe-para,
+.price-para {
+    color: #8f8f8f;
+}
+
+.pad {
+    padding: 3% 5%;
+
+}
+
+.hero {
+    padding-top: 10%;
+}
+
+.ph-img {
+
+    width: 60%;
+    animation: animate 1s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes animate {
+    0% {
+
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.head-align {
+    margin-top: 40px;
+}
+
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+#features {
+    padding: 7% 15%;
+    background-color: #3a3737;
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+.icon-col {
+    color: #e72a11;
+    padding-bottom: 3%;
+}
+
+.icon-col:hover {
+    color: #e72a11;
+}
+
+.foot-ani:hover {
+    transition: ease-in-out 0.6s;
+    transform: scale(1.5);
+}
+
+#testimonials {
+    padding: 7% 20%;
+    background-color: #36195c;
+    backdrop-filter: blur(2px);
+    text-align: center;
+    color: #fbfbfb;
+}
+
+.testimonial-head,
+.price-head,
+.amount {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3rem;
+}
+.price-head,.price-para{
+    color: #cfc6c6;
+}
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 10px 10px;
+}
+
+.press-image {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+#press {
+    /* padding-bottom: ; */
+    background-color: #1b98a1;
+    text-align: center;
+}
+
+.carousel-inner {
+    height: 350px;
+}
+
+#pricing {
+    padding: 100px;
+    background-color: #3a3737;
+}
+
+.price-col {
+    padding: 3% 2%;
+}
+
+.card-dis {
+    height: 200px;
+}
+
+#cta {
+    background-color: #b61d95;
+    padding: 7% 15%;
+}
+
+#footer,
+#contact {
+    padding: 7% 15%;
+}
+
+.foot-col {
+    color: #fff;
+}
+
+.foot-icon {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:1000px) {
+    #title {
+        overflow: none;
+        height: 100vh;
+    }
+
+    .sfont {
+        font-size: 3rem;
+    }
+
+    .testimonial-head {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width:500px) {
+    .pad {
+        padding: 1% 5%;
+    }
+
+    .sfont {
+        font-size: 1.5rem;
+    }
+
+    .head-align {
+        margin-top: 10px;
+    }
+
+    .logo-font {
+        margin-left: 1%;
+    }
+
+    .m-margin>.col-lg-6 {
+        padding: 0;
+    }
+
+    #testimonials {
+        padding: 2% 2%;
+    }
+
+    #pricing {
+        padding: 5% 5%;
+    }
+    .price-head,.cta-head{
+        /* color: #ada9a9; */
+        font-size: 1.5rem;
+    }
+    .press-image{
+        width: 30%;
+        margin: 10px 10px;
+    }
+    .testimonial-head {
+        font-size: 2rem;
+        margin: 20% 2% 2% 0 ;
+    }
+    #footer{
+        text-align: none;
+    }
+    .foot-para{
+        text-align: center;
+    }
+    .foot-col{
+        width: 300px;
+    }
+
+}
